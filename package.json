@@ -1,8 +1,8 @@
 {
-  "name": "@ganbarodigital/<<YOUR-PACKAGE-NAME>>",
+  "name": "@ganbarodigital/ts-uuid-shortener",
   "version": "0.0.1",
   "description": "Converts human-readable UUIDs to bytes",
-  "repository": "github:ganbarodigital/<<YOUR-PACKAGE-NAME>>",
+  "repository": "github:ganbarodigital/ts-uuid-shortener",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
