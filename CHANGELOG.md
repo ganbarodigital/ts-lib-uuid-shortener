@@ -30,6 +30,7 @@ The following changes have been completed, and will be included in the next tagg
 ### Dependencies
 
 * Added deps:
+  - `@ganbarodigital/ts-on-error`
   - `@ganbarodigital/ts-uuid-parser`
 
 ### Tools
