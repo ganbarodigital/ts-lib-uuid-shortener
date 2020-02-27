@@ -21,7 +21,9 @@ For each release, changes are grouped under these headings:
 
 The following changes have been completed, and will be included in the next tagged release.
 
-### Backwards-Compatibility Breaks
+## v0.0.1
+
+Released Thursday, 27th February 2020.
 
 ### New
 
@@ -36,5 +38,3 @@ The following changes have been completed, and will be included in the next tagg
 * Added deps:
   - `@ganbarodigital/ts-lib-base-n`
   - `@ganbarodigital/ts-lib-uuid-parser`
-
-### Tools
