@@ -25,12 +25,14 @@ The following changes have been completed, and will be included in the next tagg
 
 ### New
 
+* Added `uuidToBase64Url()`
+
 ### Fixes
 
 ### Dependencies
 
 * Added deps:
-  - `@ganbarodigital/ts-on-error`
-  - `@ganbarodigital/ts-uuid-parser`
+  - `@ganbarodigital/ts-lib-base-n`
+  - `@ganbarodigital/ts-lib-uuid-parser`
 
 ### Tools
