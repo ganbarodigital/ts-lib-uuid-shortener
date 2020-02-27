@@ -31,7 +31,9 @@
 // ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 //
+import { base32UrlEncodeFromBuffer } from "@ganbarodigital/ts-lib-base-n/lib/v1";
+import { Uuid, uuidToBytes } from "@ganbarodigital/ts-lib-uuid-parser/lib/v1";
 
-//
-// This file is deliberately empty.
-//
+export function uuidToBase32Url(uuid: Uuid): string {
+    return base32UrlEncodeFromBuffer(uuidToBytes(uuid));
+}

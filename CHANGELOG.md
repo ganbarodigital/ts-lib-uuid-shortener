@@ -21,26 +21,20 @@ For each release, changes are grouped under these headings:
 
 The following changes have been completed, and will be included in the next tagged release.
 
-### Backwards-Compatibility Breaks
-
-### New
-
-### Fixes
-
-### Dependencies
-
-### Tools
-
 ## v0.0.1
 
-Released Monday, 1st January 2020.
-
-### Backwards-Compatibility Breaks
+Released Thursday, 27th February 2020.
 
 ### New
+
+* Added `uuidToBase32Url()`
+* Added `uuidToBase36Url()`
+* Added `uuidToBase64Url()`
 
 ### Fixes
 
 ### Dependencies
 
-### Tools
+* Added deps:
+  - `@ganbarodigital/ts-lib-base-n`
+  - `@ganbarodigital/ts-lib-uuid-parser`
