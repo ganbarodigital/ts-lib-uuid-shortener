@@ -31,7 +31,21 @@
 // ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 //
+import { isBase32UrlData } from "@ganbarodigital/ts-lib-base-n/lib/v1";
+import { uuidFromFormatted } from "@ganbarodigital/ts-lib-uuid-parser/lib/v1";
+import { expect } from "chai";
+import { describe } from "mocha";
 
-export * from "./base32";
-export * from "./base36";
-export * from "./base64";
+import { uuidToBase32Url } from "./base32";
+
+describe("uuidToBase32UrlEncode()", () => {
+    it("converts a Uuid to a base32Url-encoded string", () => {
+        const inputValue = uuidFromFormatted("a968f2c6-b61b-4f88-a0e0-ec370a981a2e");
+        const expectedValue = "59d3pcddgr9u4a1o7c6s59g6he";
+
+        const actualValue = uuidToBase32Url(inputValue);
+
+        expect(actualValue).to.equal(expectedValue);
+        expect(isBase32UrlData(actualValue)).to.equal(true);
+    });
+});

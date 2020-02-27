@@ -7,6 +7,7 @@ This TypeScript library will shorten any [RFC 4122 UUID](http://www.ietf.org/rfc
 - [Introduction](#introduction)
 - [Quick Start](#quick-start)
 - [V1 API](#v1-api)
+  - [uuidToBase32Url()](#uuidtobase32url)
   - [uuidToBase36Url()](#uuidtobase36url)
   - [uuidToBase64Url()](#uuidtobase64url)
 - [NPM Scripts](#npm-scripts)
@@ -31,6 +32,29 @@ __VS Code users:__ once you've added a single import anywhere in your project, y
 
 ## V1 API
 
+### uuidToBase32Url()
+
+```typescript
+import { Uuid } from "@ganbarodigital/ts-lib-uuid-parser/lib/v1";
+import { uuidToBase32Url } from "@ganbarodigital/ts-lib-uuid-shortener/lib/v1"
+
+export function uuidToBase32Url(uuid: Uuid): string;
+```
+
+`uuidToBase32Url()` is a _data transform_. It converts a `Uuid` into a base32url-encoded string.
+
+For example:
+
+```typescript
+import { uuidFromFormatted } from "@ganbarodigital/ts-lib-uuid-parser/lib/v1";
+import { uuidToBase32Url } from "@ganbarodigital/ts-lib-uuid-shortener/lib/v1"
+
+const uuid = uuidFromFormatted("a968f2c6-b61b-4f88-a0e0-ec370a981a2e");
+const shortened = uuidToBase32Url(inputValue);
+console.log(shortened);
+// outputs "59d3pcddgr9u4a1o7c6s59g6he";
+```
+
 ### uuidToBase36Url()
 
 ```typescript
@@ -46,10 +70,10 @@ For example:
 
 ```typescript
 import { uuidFromFormatted } from "@ganbarodigital/ts-lib-uuid-parser/lib/v1";
-import { uuidToBase64Url } from "@ganbarodigital/ts-lib-uuid-shortener/lib/v1"
+import { uuidToBase36Url } from "@ganbarodigital/ts-lib-uuid-shortener/lib/v1"
 
 const uuid = uuidFromFormatted("a968f2c6-b61b-4f88-a0e0-ec370a981a2e");
-const shortened = uuidToBase64Url(inputValue);
+const shortened = uuidToBase36Url(inputValue);
 console.log(shortened);
 // outputs "a127dxfucuekzxf65qw12c84u";
 ```
