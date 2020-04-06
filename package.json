@@ -1,6 +1,6 @@
 {
   "name": "@ganbarodigital/ts-lib-uuid-shortener",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shortens UUIDs in a URL-friendly manner",
   "repository": "github:ganbarodigital/ts-lib-uuid-shortener",
   "main": "lib/index.js",
