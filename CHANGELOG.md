@@ -21,6 +21,16 @@ For each release, changes are grouped under these headings:
 
 The following changes have been completed, and will be included in the next tagged release.
 
+## v0.0.3
+
+Released Friday, 17th April 2020.
+
+### Dependencies
+
+* Removed unused dependency on `@ganbarodigital/ts-lib-error-reporting`
+* Upgraded to latest `@ganbarodigital/ts-lib-base-n`
+* Upgraded to latest `@ganbarodigital/ts-lib-uuid-parser`
+
 ## v0.0.2
 
 Released Monday, 6th April 2020.
